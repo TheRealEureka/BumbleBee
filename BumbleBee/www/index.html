@@ -33,6 +33,12 @@
             <button>Lancer le tutomiel</button>
             <p class="legalMention"><a>Mentions légales</a></p>
         </div>
+        <div id="bandeau">
+            <!-- bandeau score affiché sur chaque page-->
+            <div id="score">
+                <img src="img/fleur.png" alt="pollen" style="width:30px;"><span id="nbscanne"><h4>{{ nbFleursScanne }}</h4></span><img src="img/miel.png" alt="nectar" style="width:30px;"><span id="miel"><h4>{{ score }}</h4></span>TEMPS<span id="temps">{{ timer }}</span>
+        </div>
+        
         <div id="scanFleur">
             <button>Quitter la partie</button>
             <h1>La tulipe</h1>
@@ -52,6 +58,13 @@
             <h3>Bravo !!!</h3>
             <h5>Tu as sauvé la ruche en lui apportant toutes ces ressources, merci à toi et à très bientôt !</h5>
             <button class="btn btn-1 btn-sep icon-bee">Revenir à l'accueil</button>
+        </div>
+        <div id="saisiecode">
+            <h1>Ecrivez ci-dessous le code</h1>
+            <input type="text" id="code" name="code" placeholder="Code">
+            <button id="valider">Valider</button>
+            <button id="annuler">Annuler</button>
+            <h5>Si tu rencontres un problème lors du scan QR code, tu peux entrer le code manuellement. Il se situe en dessous du QR code. Si le code ne fonctionne pas, contacte le support.</h5>
         </div>
         <!-- <script src="cordova.js"></script> -->
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
