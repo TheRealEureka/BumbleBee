@@ -80,18 +80,7 @@
 
 
 #bandeau {
-    background-color: #c89017;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
+    background-color: #c89017; height: 50px; width: 100%; position: fixed; top: 0; left: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center;}
 
 #saisiecode {
     display: none;
