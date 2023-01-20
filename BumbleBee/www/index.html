@@ -21,6 +21,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
         <title>BumbleBee</title>
     </head>
     <body>
@@ -31,6 +32,19 @@
             <button>Lancer le tutomiel</button>
             <button>Mentions légales</button>
         </div>
+        <div id="scanFleur">
+            <button>Quitter la partie</button>
+            <h1>La tulipe</h1>
+            <h5>Description de la fleur :</h5>
+            <h5>Les tulipes forment un genre de plante herbacées de la famille des Lilacées, qui compte une centaine d'éspèce originaires des régions tempérées chaudes de l'Ancien Monde. Plusieurs espèces sont largement cultivées comme plante ornementales et ont donné lieu à la création de plusieurs miliers d'éspèces.</h5>
+            <img src="xxxxxxxxxxxx" alt="image d'une tulipe">
+            <h3>Cette fleur te rapporte</h3>
+            <img src="img/fleur.png" alt="pollen" style="width:30px;"><h4>2</h4>
+            <img src="img/miel.png" alt="nectar" style="width:30px;"><h4>6</h4>
+            <h3>Position dans le jardin botanique</h3>
+            <div id="map"></div>
+            <button>Continuer la partie</button>
+        </div>
         <div id="victoire">
             <h1>Victoire</h1>
             <img src="img/ruche.jpg" alt="image d'une ruche">
@@ -39,6 +53,7 @@
             <button>Revenir à l'acceuil</button>
         </div>
         <!-- <script src="cordova.js"></script> -->
-        <!-- <script src="js/index.js"></script> -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
