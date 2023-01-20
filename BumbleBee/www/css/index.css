@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
- 
+
 #scanFleur {
     position: absolute;
     top: 0px;
@@ -94,8 +94,8 @@
     display: block;
 }
 
-#scanFleur .fleur{
-    float:left;
+#scanFleur .fleur {
+    float: left;
     height: 100%;
     width: 50%;
 }
@@ -210,7 +210,17 @@
 }
 
 #bandeau {
-    background-color: #c89017; height: 50px; width: 100%; position: fixed; top: 0; left: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center;}
+    background-color: #c89017;
+    height: 50px;
+    width: 100%;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #saisiecode {
     display: none;
