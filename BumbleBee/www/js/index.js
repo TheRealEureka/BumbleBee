@@ -26,3 +26,24 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker([48.66275353645403, 6.156009133844759]).addTo(map);
+
+let DIVs = [
+    document.getElementById("accueil"),
+    document.getElementById("scanFleur"),
+    document.getElementById("victoire"),
+    document.getElementById("saisiecode"),
+];
+// window.onclick = function (event) {
+//     DIVs.forEach(element => {
+//         if (event.target == element) {
+//             element.style.display = "block";
+//             displayNone();
+//         }
+//     });
+// }
+
+function displayNone() {
+    DIVs.forEach(element => {
+        element.style.display = "none";
+    });
+}

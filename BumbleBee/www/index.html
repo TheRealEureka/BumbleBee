@@ -18,27 +18,45 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
-        <title>BumbleBee</title>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="accueil">
-            <h1>BumbleBee</h1>
-            <img src="img/abeille.png" alt="image d'une abeille">
-            <button>Commencer la partie</button>
-            <button>Lancer le tutomiel</button>
-            <p class="legalMention"><a>Mentions légales</a></p>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <title>BumbleBee</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="accueil">
+        <h1>BumbleBee</h1>
+        <img src="img/abeille.png" alt="image d'une abeille">
+        <button>Commencer la partie</button>
+        <button>Lancer le tutomiel</button>
+        <p class="legalMention"><a>Mentions légales</a></p>
+
+        <!-- Trigger/Open The Modal -->
+        <!-- <button id="myBtn">Open Modal</button> -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div id="bienvenue" class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+
         </div>
-        <div id="bandeau">
-            <!-- bandeau score affiché sur chaque page-->
-            <div id="score">
-                <img src="img/fleur.png" alt="pollen" style="width:30px;">{{ nbFleursScanne }}<img src="img/miel.png" alt="nectar" style="width:30px;">{{ score }}TEMPS : {{ timer }}
+    </div>
+    <div id="bandeau">
+        <!-- bandeau score affiché sur chaque page-->
+        <div id="score">
+            <img src="img/fleur.png" alt="pollen" style="width:30px;">{{ nbFleursScanne }}<img src="img/miel.png"
+                alt="nectar" style="width:30px;">{{ score }}TEMPS : {{ timer }}
         </div>
-        
+
         <div id="scanFleur">
             <button class="leave">Quitter la partie</button>
             <h1>La tulipe</h1>
@@ -47,7 +65,7 @@
                 centaine d'éspèce originaires des régions tempérées chaudes de l'Ancien Monde. Plusieurs espèces sont
                 largement cultivées comme plante ornementales et ont donné lieu à la création de plusieurs miliers
                 d'éspèces.</p>
-    
+
             <div class="gainFleur">
                 <img class="fleur" src="img/abeille.png" alt="image d'une tulipe">
                 <div class="droite">
@@ -58,7 +76,7 @@
                     <p>6</p>
                 </div>
             </div>
-    
+
             <h2>Position dans le jardin botanique</h2>
             <div id="map"></div>
             <button class="continueBtn">Continuer la partie</button>
@@ -75,10 +93,13 @@
             <input type="text" id="code" name="code" placeholder="Code">
             <button id="valider">Valider</button>
             <button id="annuler">Annuler</button>
-            <h5>Si tu rencontres un problème lors du scan QR code, tu peux entrer le code manuellement. Il se situe en dessous du QR code. Si le code ne fonctionne pas, contacte le support.</h5>
+            <h5>Si tu rencontres un problème lors du scan QR code, tu peux entrer le code manuellement. Il se situe en
+                dessous du QR code. Si le code ne fonctionne pas, contacte le support.</h5>
         </div>
         <!-- <script src="cordova.js"></script> -->
-        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
         <script src="js/index.js"></script>
-    </body>
+</body>
+
 </html>
