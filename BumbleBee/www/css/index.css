@@ -17,6 +17,15 @@
  * under the License.
  */
 
+#webcam{
+    border: 1px solid black;
+}
+
+.qr-reader{
+    display: flex;
+    justify-content: center;
+}
+
 #scanFleur {
     position: absolute;
     top: 0px;
@@ -134,7 +143,6 @@
 }
 
 #accueil {
-    display: none;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -146,7 +154,6 @@
 }
 
 #victoire {
-    display: none;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -223,12 +230,10 @@
 }
 
 #saisiecode {
-    display: none;
     height: 100vh;
 }
 
 #victoire {
-    display: none;
     height: 100vh;
     background-image: url("../img/fond.jpg");
     background-size: 200%;

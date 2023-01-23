@@ -17,6 +17,15 @@
  * under the License.
  */
 
+// Wait for the deviceready event before using any of Cordova's device APIs.
+// See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
+
+var map = L.map('map').setView([48.66093564404043, 6.155520066046425], 16);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([48.66275353645403, 6.156009133844759]).addTo(map);
 
 
 // Obtenir un flux vidéo à partir de la webcam
